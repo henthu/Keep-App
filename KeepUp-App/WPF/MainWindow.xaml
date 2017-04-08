@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Keep Up" Height="463" Width="660">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="181*"/>
+            <ColumnDefinition Width="471*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="173*"/>
+
+        </Grid.RowDefinitions>
+        <Button x:Name="CreateProfileButton" Content="Create Profile" HorizontalAlignment="Left" Height="30" Margin="39,18,0,0" VerticalAlignment="Top" Width="126" Grid.Row="3" Grid.Column="1" Click="CreateProfileButton_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="161" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="10,12,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="161" TextAlignment="Right"/>
+        <TextBox x:Name="FirstNameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="27,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" AutomationProperties.HelpText="Enter your first name..."/>
+        <TextBox x:Name="LastNameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="27" Margin="27,14,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" AutomationProperties.HelpText="Enter your Last name..."/>
+    </Grid>
+</Window>
